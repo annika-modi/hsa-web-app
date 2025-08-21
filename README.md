@@ -14,7 +14,7 @@ The HSA App is a simple and secure application for managing a Health Savings Acc
 
 **Transaction Validation**: Simulate a transaction at a merchant and have it validated against the account's available balance and rules.
 
-## 🛠️ Technologies Used
+## Technologies Used
 **Frontend**: React.js
 
 **Styling**: Custom CSS for a modern, healthcare-themed design.
