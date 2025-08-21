@@ -2,7 +2,7 @@
 
 ## Project Description
 
-The HSA App is a simple and secure application for managing a Health Savings Account (HSA). It provides a clean, modern interface for users to create an account, deposit funds, issue a virtual debit card, and perform secure transactions.
+The HSA App is a simple and secure application for managing a Health Savings Account (HSA). It provides a clean, modern interface for users to create an account, deposit funds, issue a virtual debit card, and perform secure transactions. This project was built using React.js for the frontend and Python with the Flask framework for the backend.
 
 ## Features
 
