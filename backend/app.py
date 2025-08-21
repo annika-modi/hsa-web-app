@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import uuid 
+import random
 
 app = Flask(__name__)
 CORS(app) 
@@ -47,10 +48,13 @@ def issue_card():
     for user_id, account in data["accounts"].items():
         if account["account_id"] == account_id:
             account["card_issued"] = True
+            #generate a random card
+            card_number = ' '.join([''.join([str(random.randint(0, 9)) for _ in range(4)]) for _ in range(4)])
+            
             card = {
-                "card_number": "4000 1234 5678 9010", # fake virtual card
-                "cvv": "123",
-                "expiry": "12/29",
+                "card_number": card_number,
+                "cvv": "123", 
+                "expiry": "12/29", 
                 "linked_account": account_id
             }
             data["cards"][account_id] = card
