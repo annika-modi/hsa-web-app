@@ -19,11 +19,11 @@ The HSA App is a simple and secure application for managing a Health Savings Acc
 
 **Styling**: Custom CSS for a modern, healthcare-themed design.
 
-**State Management**: React's useState hook for simple, effective state management.
+**State Management**: React's `useState` hook for simple, effective state management.
 
-**Backend Communication**: axios for making API calls to a Python backend.
+**Backend Communication**: `axios` for making API calls to a Python backend.
 
-## 🚀 How to Run the App
+## How to Run the App
 To run this application, you need to set up both the frontend and a Python backend.
 
 ## Backend Setup
@@ -32,9 +32,9 @@ Make sure you have Python installed.
 
 Navigate to your backend directory.
 
-Install the required libraries: pip install flask flask-cors
+Install the required libraries: `pip install flask flask-cors`
 
-Run the backend server: python app.py
+Run the backend server: `python app.py`
 
 ## Frontend Setup
 
@@ -42,8 +42,8 @@ Make sure you have Node.js and npm installed.
 
 Navigate to your frontend directory.
 
-Install the dependencies: npm install
+Install the dependencies: `npm install`
 
-Start the React development server: npm start
+Start the React development server: `npm start`
 
-The application will now be running on http://localhost:3000 (or another port if 3000 is in use).
+The application will now be running on `http://localhost:3000` (or another port if 3000 is in use).
