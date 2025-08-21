@@ -1,31 +1,32 @@
-Health Savings Account App
-Project Description
+# Health Savings Account App
+
+## Project Description
+
 The HSA App is a simple and secure application for managing a Health Savings Account (HSA). It provides a clean, modern interface for users to create an account, deposit funds, issue a virtual debit card, and perform secure transactions. The app demonstrates a basic, yet robust, user flow for a personal finance application.
 
-Features
-Account Creation: Users can create a new HSA account with a unique ID and a starting balance.
+##Features
 
-Fund Deposits: Seamlessly add funds to your HSA to cover future medical expenses.
+**Account Creation**: Users can create a new HSA account with a unique ID and a starting balance.
 
-Virtual Card Issuance: Issue a virtual debit card linked to your account for secure online transactions.
+**Fund Deposits**: Seamlessly add funds to your HSA to cover future medical expenses.
 
-Transaction Validation: Simulate a transaction at a merchant and have it validated against the account's available balance and rules.
+**Virtual Card Issuance**: Issues a virtual debit card linked to your account for secure online transactions.
 
-Simple Navigation: A clear user interface with back and reset buttons for an intuitive experience.
+**Transaction Validation**: Simulate a transaction at a merchant and have it validated against the account's available balance and rules.
 
-🛠️ Technologies Used
-Frontend: React.js
+## 🛠️ Technologies Used
+**Frontend**: React.js
 
-Styling: Custom CSS for a modern, healthcare-themed design.
+**Styling**: Custom CSS for a modern, healthcare-themed design.
 
-State Management: React's useState hook for simple, effective state management.
+**State Management**: React's useState hook for simple, effective state management.
 
-Backend Communication: axios for making API calls to a Python backend.
+**Backend Communication**: axios for making API calls to a Python backend.
 
-🚀 How to Run the App
+## 🚀 How to Run the App
 To run this application, you need to set up both the frontend and a Python backend.
 
-Backend Setup
+## Backend Setup
 
 Make sure you have Python installed.
 
@@ -35,7 +36,7 @@ Install the required libraries: pip install flask flask-cors
 
 Run the backend server: python app.py
 
-Frontend Setup
+## Frontend Setup
 
 Make sure you have Node.js and npm installed.
 
