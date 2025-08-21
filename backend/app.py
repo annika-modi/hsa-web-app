@@ -1,32 +1,29 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-import uuid # To generate unique IDs
+import uuid 
 
 app = Flask(__name__)
-CORS(app) # This enables your frontend to talk to your backend
+CORS(app) 
 
-# data is in a dict
 data = {
     "users": {},
     "accounts": {},
     "cards": {}
 }
 
-# --- CORE FEATURES ---
+# --- MAIN FEATURES ---
 
 @app.route('/api/create-account', methods=['POST'])
 def create_account():
     user_info = request.json
     user_id = str(uuid.uuid4())
-    # A simple account object
     account = {
         "account_id": f"hsa-{user_id}",
         "owner_name": user_info.get('name'),
-        "balance": 0, # Start with a zero balance
+        "balance": 0, 
         "card_issued": False
     }
     data["accounts"][user_id] = account
-    print("Current Data:", data) # For debugging
     return jsonify(account), 201
 
 @app.route('/api/deposit', methods=['POST'])
@@ -51,7 +48,7 @@ def issue_card():
         if account["account_id"] == account_id:
             account["card_issued"] = True
             card = {
-                "card_number": "4000 1234 5678 9010", # Fake virtual card
+                "card_number": "4000 1234 5678 9010", # fake virtual card
                 "cvv": "123",
                 "expiry": "12/29",
                 "linked_account": account_id
@@ -67,7 +64,6 @@ def validate_transaction():
     amount = transaction_info.get('amount')
     merchant = transaction_info.get('merchant')
 
-    # Super simple validation logic
     QUALIFIED_MERCHANTS = ["CVS Pharmacy", "Walgreens", "Doctor's Office"]
 
     account = next((acc for acc in data["accounts"].values() if acc["account_id"] == account_id), None)
@@ -79,7 +75,6 @@ def validate_transaction():
     if merchant not in QUALIFIED_MERCHANTS:
         return jsonify({"approved": False, "reason": f"{merchant} is not a qualified medical expense."})
 
-    # If all checks pass
     account["balance"] -= amount
     return jsonify({
         "approved": True, 

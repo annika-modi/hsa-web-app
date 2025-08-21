@@ -4,14 +4,14 @@
 /* Basic setup and global styles */
 body {
   font-family: 'Poppins', sans-serif;
-  background: #f0f4f8; /* Light gray-blue background */
+  background: #f0f4f8; 
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  color: #334e68; /* Dark blue-gray text */
+  color: #334e68; 
 }
 
 /* Main app container */
@@ -42,7 +42,7 @@ body {
 }
 
 .header .fa-notes-medical {
-    color: #007bff; /* Bright blue for the icon */
+    color: #007bff; 
     margin-left: 0.5rem;
 }
 
@@ -108,7 +108,7 @@ body {
 .dashboard-card .balance-info .balance-amount {
     font-size: 3rem;
     font-weight: 700;
-    color: #17a2b8; /* A calming medical blue */
+    color: #17a2b8; 
     margin: 0.5rem 0;
 }
 
@@ -152,7 +152,7 @@ input[type="number"]:focus {
 }
 
 .input-group input::placeholder {
-  color: #cdd7e4; /* Change this to your desired color */
+  color: #cdd7e4; 
 }
 
 /* Button styles */
@@ -213,7 +213,7 @@ button {
 /* Message styles */
 .message {
   font-size: 0.9rem;
-  color: #007bff; /* Use a friendly blue for success messages */
+  color: #007bff; 
   font-weight: 500;
   margin-top: 1rem;
 }

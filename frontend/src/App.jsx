@@ -20,7 +20,7 @@ function App() {
     setMessage('');
   };
 
-  // Reset all state and go back to the start
+  // Resets all state and go back to the start
   const handleReset = () => {
     setUserName('');
     setAccount(null);
@@ -65,12 +65,10 @@ function App() {
       const response = await axios.post(`${API_URL}/issue-card`, { accountId: account.account_id });
       setCard(response.data.card);
       setAccount(response.data.account);
-      // Instead of navigating immediately, show a confirmation message.
       setMessage('Virtual card issued successfully!');
       
-      // Wait for 2 seconds before showing the transaction button.
       setTimeout(() => {
-        setMessage(''); // Clear the message after the delay
+        setMessage('');
         navigateTo('dashboard');
       }, 2000);
 
@@ -173,8 +171,6 @@ function App() {
                     onChange={(e) => {
                         const amount = parseFloat(e.target.value);
                         if (!isNaN(amount) && amount > 0) {
-                            // A simple way to handle input for the deposit function
-                            // The actual deposit is handled by the handleDeposit function
                         }
                     }}
                 />
