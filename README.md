@@ -4,7 +4,7 @@
 
 The HSA App is a simple and secure application for managing a Health Savings Account (HSA). It provides a clean, modern interface for users to create an account, deposit funds, issue a virtual debit card, and perform secure transactions. The app demonstrates a basic, yet robust, user flow for a personal finance application.
 
-##Features
+## Features
 
 **Account Creation**: Users can create a new HSA account with a unique ID and a starting balance.
 
