@@ -1,0 +1,229 @@
+/* Import Google Fonts for a modern, clean look */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Basic setup and global styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f0f4f8; /* Light gray-blue background */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #334e68; /* Dark blue-gray text */
+}
+
+/* Main app container */
+.App {
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* Header section */
+.header {
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #0d2840;
+  margin-bottom: 0.5rem;
+}
+
+.header .subtitle {
+  color: #6a7c92;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.header .fa-notes-medical {
+    color: #007bff; /* Bright blue for the icon */
+    margin-left: 0.5rem;
+}
+
+/* Main content area and card design */
+.main-content {
+  width: 100%;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(13, 40, 64, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0d2840;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #6a7c92;
+  margin-bottom: 1.5rem;
+}
+
+/* Dashboard-specific card styles */
+.dashboard-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dashboard-card .welcome-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.dashboard-card .welcome-header h2 {
+    margin: 0;
+}
+
+.dashboard-card .balance-info {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.dashboard-card .balance-info .label {
+    font-size: 0.9rem;
+    color: #6a7c92;
+    margin: 0;
+}
+
+.dashboard-card .balance-info .balance-amount {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #17a2b8; /* A calming medical blue */
+    margin: 0.5rem 0;
+}
+
+.dashboard-card .balance-info .small-text {
+    font-size: 0.75rem;
+    color: #a0aec0;
+    word-break: break-all;
+}
+
+.button-grid {
+    display: grid;
+    gap: 1rem;
+    width: 100%;
+}
+
+/* Input styles */
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #c3d4e6;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  color: #b9d4e1;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  outline: none;
+  border-color: #17a2b8;
+  box-shadow: 0 0 0 3px rgba(23, 162, 184, 0.2);
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.input-group input::placeholder {
+  color: #cdd7e4; /* Change this to your desired color */
+}
+
+/* Button styles */
+button {
+  cursor: pointer;
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+/* Primary button (for key actions) */
+.primary-btn {
+  background-color: #17a2b8;
+  color: white;
+  box-shadow: 0 4px 15px rgba(23, 162, 184, 0.3);
+}
+
+.primary-btn:hover {
+  background-color: #148ea1;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(23, 162, 184, 0.4);
+}
+
+/* Secondary button (for navigation) */
+.secondary-btn {
+    background-color: #e3f2fd;
+    color: #17a2b8;
+    box-shadow: 0 4px 10px rgba(23, 162, 184, 0.1);
+}
+
+.secondary-btn:hover {
+    background-color: #c0dcf7;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(23, 162, 184, 0.2);
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  color: #17a2b8;
+  font-weight: 500;
+  text-decoration: underline;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.link-btn:hover {
+  text-decoration: none;
+}
+
+/* Message styles */
+.message {
+  font-size: 0.9rem;
+  color: #007bff; /* Use a friendly blue for success messages */
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+/* Icon styles */
+.icon-lg {
+    font-size: 2.5rem;
+    color: #17a2b8;
+}
+
+.icon-sm {
+    font-size: 1rem;
+}
